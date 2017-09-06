@@ -1,0 +1,40 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.7
+Date: Mon, 15 Jan 2007 11:00:42 +0000
+Source: aiccu
+Binary: aiccu
+Architecture: source i386
+Version: 20070115
+Distribution: stable
+Urgency: medium
+Maintainer: SixXS Staff <info@sixxs.net>
+Changed-By: Jeroen Massar <jeroen@sixxs.net>
+Description: 
+ aiccu      - SixXS Automatic IPv6 Connectivity Client Utility
+Changes: 
+ aiccu (20070115) stable; urgency=medium
+ .
+   * Fixup in Debian init script (based on original patch by Bernhard Schmidt).
+   * Change in redirections so that errors don't show in debconf menu's etc.
+   * NetBSD fixes as there is not always a Tunnel Device that
+     supports IPv6 (thanks to Geert Hendrickx).
+   * Gentoo ebuild update, adding depends and require ntp-client.
+   * RPM spec update, add build-requirement.
+   * Check return values of system commands.
+   * Added a big warning about running AICCU from Daemontools and similar
+     programs which run AICCU in a loop, thus hammering the TIC server.
+   * Be a bit smarter in checking for support of IPv6.
+Files: 
+ ea057a1130b4e194c9f926bbaeef5ad1 500 net optional aiccu_20070115.dsc
+ c9bcc83644ed788e22a7c3f3d4021350 70056 net optional aiccu_20070115.tar.gz
+ 3b0f1e018584c2c396026bb5f7ec08a0 42082 net optional aiccu_20070115_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFFq6RSKaooUjM+fCMRAjMiAKCgkVWa7beGRz8eiiulalSG7zB8gwCdHOJs
+3AEEw0c6fXBbh+/0Bl82yiY=
+=N4Fq
+-----END PGP SIGNATURE-----
